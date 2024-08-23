@@ -1,7 +1,8 @@
-g, alice, role:admin
-g, bob, role:user
-p, role:admin, data, read
-p, role:admin, data, write
-p, role:user, data, read
-p, role:admin, secretdata, read
-g, alice, role:superadmin
+p, admin, data, read
+p, admin, data, write
+p, user, data, read
+p, superadmin, secretdata, read
+
+g, alice, admin
+g, bob, user
+g, alice, superadmin
